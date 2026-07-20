@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Islam Mansour, an Applied Data Science student in Hamburg focused on machine learning, data engineering and analytics.">
+  <meta name="theme-color" content="#07131f">
+  <title>Islam Mansour — Data Science Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Islam Mansour, home">
+        <span class="brand-mark" aria-hidden="true">IM</span>
+        <span class="brand-name">Islam Mansour</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a class="nav-cta" href="output/Islam_Mansour_CV.pdf" download>Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Open to working-student &amp; junior roles</p>
+          <h1>I turn raw data into <em>working products.</em></h1>
+          <p class="hero-intro">Applied Data Science student at TU Hamburg, building reliable machine-learning APIs, data pipelines and decision-ready dashboards.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="mailto:islamwm05@outlook.de">Let’s talk</a>
+          </div>
+          <div class="hero-meta" aria-label="Highlights">
+            <div><strong>Top 6</strong><span>in degree program</span></div>
+            <div><strong>10+</strong><span>technical projects</span></div>
+            <div><strong>3</strong><span>fluent languages</span></div>
+          </div>
+        </div>
+
+        <div class="portrait-wrap reveal" data-delay="1">
+          <div class="portrait-backdrop" aria-hidden="true"></div>
+          <figure class="portrait-frame">
+            <img src="assets/islam-mansour.jpeg" alt="Islam Mansour in business attire" width="1365" height="1820">
+          </figure>
+          <div class="portrait-note note-top"><span>Based in</span><strong>Hamburg, DE</strong></div>
+          <div class="portrait-note note-bottom"><span>Focus</span><strong>ML + Data Engineering</strong></div>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>PYTHON</span><i>✦</i><span>SQL</span><i>✦</i><span>MACHINE LEARNING</span><i>✦</i><span>DATA ENGINEERING</span><i>✦</i><span>FASTAPI</span><i>✦</i><span>STREAMLIT</span><i>✦</i>
+          <span>PYTHON</span><i>✦</i><span>SQL</span><i>✦</i><span>MACHINE LEARNING</span><i>✦</i><span>DATA ENGINEERING</span><i>✦</i><span>FASTAPI</span><i>✦</i><span>STREAMLIT</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="shell about-grid">
+        <div class="section-label reveal"><span>01</span> About</div>
+        <div class="about-copy reveal">
+          <h2>Curious by nature.<br><em>Practical by design.</em></h2>
+          <p class="lead">I enjoy the full path from a messy source file to a tool someone can actually use.</p>
+          <div class="about-columns">
+            <p>My work spans model development, data validation, ETL design, APIs and interactive analytics. I care about clean structure, reproducible results and clear communication—not just a high model score.</p>
+            <p>Alongside my Applied Data Science degree, I have built projects in Python, SQL, C and C++, giving me a strong foundation in algorithms, object-oriented design and software engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>02</span> Selected projects</div>
+          <h2>Proof, not promises.</h2>
+          <p>Projects that show how I approach models, systems and end users.</p>
+        </div>
+
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="ml" aria-pressed="false">Machine learning</button>
+          <button class="filter" type="button" data-filter="data" aria-pressed="false">Data engineering</button>
+          <button class="filter" type="button" data-filter="analytics" aria-pressed="false">Analytics</button>
+          <button class="filter" type="button" data-filter="engineering" aria-pressed="false">Software &amp; APIs</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal" data-category="ml data">
+            <div class="project-index">01 / Flagship</div>
+            <div class="project-visual visual-api" aria-hidden="true">
+              <div class="api-window">
+                <div class="window-bar"><i></i><i></i><i></i><span>/predict/batch</span></div>
+                <div class="api-line"><b>POST</b><span>200 OK</span></div>
+                <pre>{
+  "customer_id": 1842,
+  "churn_risk": 0.82,
+  "segment": "high"
+}</pre>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Production-style ML API</h3><span>↗</span></div>
+              <p>Turned a trained gradient-boosting churn model into a documented FastAPI service with Pydantic validation, health checks and batch prediction.</p>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>Scikit-learn</li><li>FastAPI</li><li>REST</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data">
+            <div class="project-index">02</div>
+            <div class="project-visual visual-pipeline" aria-hidden="true">
+              <span>CSV</span><i>→</i><span>STAGE</span><i>→</i><span>MART</span>
+              <div class="quality-badge">6/6 checks passed</div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>ETL &amp; Data Warehouse</h3><span>↗</span></div>
+              <p>Unified CSV, JSON and SQLite sources into staging and mart layers, using CTEs, window functions, SQL views and six automated quality checks.</p>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>SQL</li><li>Pandas</li><li>SQLite</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ml">
+            <div class="project-index">03</div>
+            <div class="project-visual visual-sentiment" aria-hidden="true">
+              <div><strong>+</strong><span>positive</span></div><div><strong>–</strong><span>neutral</span></div><div><strong>−</strong><span>negative</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>NLP Sentiment Analysis</h3><span>↗</span></div>
+              <p>Classified 800 product reviews through a reusable preprocessing pipeline and compared logistic regression with Naive Bayes.</p>
+              <ul class="tags" aria-label="Technologies"><li>TF-IDF</li><li>NLP</li><li>Bigrams</li><li>Model evaluation</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="analytics data">
+            <div class="project-index">04</div>
+            <div class="project-visual visual-dashboard" aria-hidden="true">
+              <div class="mini-kpis"><i></i><i></i><i></i></div>
+              <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Interactive Sales Dashboard</h3><span>↗</span></div>
+              <p>Built a Streamlit dashboard backed by direct SQL queries, cached data access and live filtering by region, month and product category.</p>
+              <ul class="tags" aria-label="Technologies"><li>Streamlit</li><li>Plotly</li><li>SQLite</li><li>Flask</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="analytics">
+            <div class="project-index">05</div>
+            <div class="project-visual visual-report" aria-hidden="true">
+              <div class="report-page"><span></span><span></span><div></div><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Automated PDF Reporting</h3><span>↗</span></div>
+              <p>Automated two-page sales reports with KPI cards, trend and category charts, and a ranked top-ten table.</p>
+              <ul class="tags" aria-label="Technologies"><li>Pandas</li><li>Matplotlib</li><li>ReportLab</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ml">
+            <div class="project-index">06</div>
+            <div class="project-visual visual-models" aria-hidden="true">
+              <div class="model-row"><span>LR</span><i style="--w:62%"></i></div>
+              <div class="model-row"><span>DT</span><i style="--w:72%"></i></div>
+              <div class="model-row"><span>RF</span><i style="--w:84%"></i></div>
+              <div class="model-row"><span>GB</span><i style="--w:92%"></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Churn Model Benchmark</h3><span>↗</span></div>
+              <p>Compared four classifiers using ROC-AUC, feature importance and RFM segmentation, then added an interactive customer-risk demo.</p>
+              <ul class="tags" aria-label="Technologies"><li>Gradient Boosting</li><li>Random Forest</li><li>ROC-AUC</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="engineering">
+            <div class="project-index">07</div>
+            <div class="project-visual visual-chess" aria-hidden="true">
+              <div class="chess-board"><i>♜</i><i>♞</i><i>♝</i><i>♛</i><i>♚</i><i>♟</i></div>
+              <div class="chess-api-label"><b>POST</b><span>/games/{id}/move</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Chess API with AI</h3><span>↗</span></div>
+              <p>Built a persistent chess backend with legal-move validation, PvP games, move history and selectable minimax, random or Stockfish opponents.</p>
+              <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>Pydantic</li><li>SQLite</li><li>Minimax</li><li>Stockfish</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="engineering">
+            <div class="project-index">08</div>
+            <div class="project-visual visual-vgpu" aria-hidden="true">
+              <div class="cube"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="pipeline-labels"><i>VERTEX</i><i>RASTER</i><i>FRAGMENT</i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Virtual GPU Renderer</h3><span>↗</span></div>
+              <p>Implemented a software GPU pipeline with programmable shaders, perspective-correct interpolation, backface culling, depth testing, textures and Phong lighting.</p>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>NumPy</li><li>3D Math</li><li>Rasterization</li><li>Shaders</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="engineering data">
+            <div class="project-index">09</div>
+            <div class="project-visual visual-repository" aria-hidden="true">
+              <div class="repo-terminal">
+                <span><b>↑</b> PUSH <i>project/content</i></span>
+                <span><b>↓</b> PULL <i>latest/version</i></span>
+                <small>repository synchronized</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Git-Style Repository API</h3><span>↗</span></div>
+              <p>Created a repository service with API-driven push and pull workflows for transferring and synchronizing project content.</p>
+              <ul class="tags" aria-label="Technologies"><li>REST API</li><li>Push / Pull</li><li>Repository workflows</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="engineering">
+            <div class="project-index">10</div>
+            <div class="project-visual visual-media" aria-hidden="true">
+              <div class="media-file input-file"><span>IMG</span><i>source</i></div>
+              <b>→</b>
+              <div class="media-file output-file"><span>IMG</span><i>optimized</i></div>
+              <div class="video-track"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Media Optimization API</h3><span>↗</span></div>
+              <p>Built an API that processes and optimizes images and selected video formats through automated upload and transformation endpoints.</p>
+              <ul class="tags" aria-label="Technologies"><li>REST API</li><li>Image processing</li><li>Video processing</li><li>Automation</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="analytics data">
+            <div class="project-index">11</div>
+            <div class="project-visual visual-eda" aria-hidden="true">
+              <div class="eda-before"><span></span><span></span><span></span><span></span><span></span></div>
+              <b>clean</b>
+              <div class="eda-after"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Data Cleaning &amp; EDA</h3><span>↗</span></div>
+              <p>Cleaned a deliberately messy real-estate dataset by resolving duplicates, missing values, inconsistent categories and outliers, then produced statistical and visual analysis.</p>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>Pandas</li><li>Seaborn</li><li>Matplotlib</li><li>Data quality</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="foundation-strip reveal">
+          <span>Also built</span>
+          <div>Ray-tracing engine <i>C++</i></div>
+          <div>3D animated chess <i>C++</i></div>
+          <div>Terminal games <i>C</i></div>
+          <div>Rule-complete chess <i>Python</i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="shell skills-grid">
+        <div class="skills-intro reveal">
+          <div class="section-label"><span>03</span> Toolkit</div>
+          <h2>From notebook<br>to <em>working system.</em></h2>
+          <p>I combine analytical thinking with the engineering needed to make data work repeatable and useful.</p>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row reveal"><span>01</span><h3>Languages</h3><p>Python · SQL · C++ · C</p></div>
+          <div class="skill-row reveal"><span>02</span><h3>Data science</h3><p>Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · Plotly</p></div>
+          <div class="skill-row reveal"><span>03</span><h3>ML / AI</h3><p>Gradient Boosting · Random Forest · NLP · TF-IDF · Logistic Regression</p></div>
+          <div class="skill-row reveal"><span>04</span><h3>Engineering</h3><p>REST APIs · ETL pipelines · Pydantic · SQLite · FastAPI · Flask · Streamlit · Data validation</p></div>
+          <div class="skill-row reveal"><span>05</span><h3>Systems &amp; media</h3><p>Software rendering · 3D math · Rasterization · Image processing · Video processing</p></div>
+          <div class="skill-row reveal"><span>06</span><h3>Tools</h3><p>Git · Jupyter Notebook · VS Code · Linux</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="shell education-grid">
+        <div class="section-label reveal"><span>04</span> Education</div>
+        <div class="education-card reveal">
+          <div class="education-main">
+            <span class="education-years">2022 — 2026</span>
+            <h2>B.Sc. Applied Data Science</h2>
+            <p>Hamburg University of Technology (TU Hamburg)</p>
+          </div>
+          <div class="education-facts">
+            <div><strong>Ranked 6th</strong><span>in the degree program</span></div>
+            <div><strong>Focus</strong><span>Machine Learning · Statistics · Databases · Data Engineering</span></div>
+            <div><strong>Coursework</strong><span>Big Data · Algorithms &amp; Data Structures · Statistics</span></div>
+          </div>
+        </div>
+        <div class="languages reveal">
+          <span>Languages</span>
+          <div><strong>Arabic</strong><small>Native</small></div>
+          <div><strong>German</strong><small>Fluent</small></div>
+          <div><strong>English</strong><small>Fluent</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="shell contact-inner reveal">
+        <p class="eyebrow">Have a data problem worth solving?</p>
+        <h2>Let’s build something<br><em>useful.</em></h2>
+        <a class="contact-link" href="mailto:islamwm05@outlook.de">islamwm05@outlook.de <span aria-hidden="true">↗</span></a>
+        <div class="contact-bottom">
+          <p>Hamburg, Germany</p>
+          <a href="output/Islam_Mansour_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell"><p>© <span data-year></span> Islam Mansour</p><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
